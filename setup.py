@@ -6,7 +6,7 @@ with open('./surveymonty/VERSION', 'r') as version_file:
 
 
 setup(
-    name='surveymonty',
+    name='ashapcott-surveymonty',
     version=version,
 
     install_requires=[
@@ -21,5 +21,5 @@ setup(
     description='Python wrapper for SurveyMonkey API',
     license='MIT',
     keywords=['SurveyMonkey'],
-    url='https://github.com/andrewkshim/SurveyMonty',
+    url='https://github.com/AshtonShapcott/SurveyMonty',
 )

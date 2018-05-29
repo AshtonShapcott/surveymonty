@@ -1,22 +1,24 @@
 # SurveyMonty
 
-**!!! NOTICE 2016-12-22 !!!** This project is no longer actively maintained.
-It will work with the latest SurveyMonkey API (v3), but there are no
-guarantees for later versions. This is a very light wrapper though,
-read through the rest of this doc and you'll have a good idea on
-how things work, so you'll be able to modify it yourself if you need to 😀.
+SurveyMonty provides a Python wrapper for the SurveyMonkey API. The differences
+in this fork are as follows:
 
-SurveyMonty is a Python wrapper for the SurveyMonkey API. Why the name?
-Because this is a wrapper in Python, and Python makes me think of
-[Monty Python](http://en.wikipedia.org/wiki/Monty_Python).
-Also, "monkey" and "Monty" both start with "mon".
+* Functions return the full response object instead of just the response JSON.
+  This is primarily to allow for tracking rate limiting.
+* The `surveymonty.Client` functions are not generated at runtime to allow for
+  better comprehension when using IDEs.
+* Some typing data is included in function calls.
+
+Why the name? Because this is a wrapper in Python, and Python makes me think of
+[Monty Python](http://en.wikipedia.org/wiki/Monty_Python). Also, "monkey" and
+"Monty" both start with "mon".
 
 This content is released under the [MIT License](./LICENSE.md).
 
 
 # Installation
 ```bash
-$ pip install surveymonty
+$ pip install AshtonShapcott/SurveyMonty
 ```
 
 
@@ -40,7 +42,8 @@ endpoints:
 
 ```python
 # GET /surveys
-surveys = client.get_surveys()
+resp = client.get_surveys()
+surveys = resp.json()
 print(surveys)
 {
   'page': 1,
