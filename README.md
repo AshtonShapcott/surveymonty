@@ -16,12 +16,6 @@ Why the name? Because this is a wrapper in Python, and Python makes me think of
 This content is released under the [MIT License](./LICENSE.md).
 
 
-# Installation
-```bash
-$ pip install AshtonShapcott/SurveyMonty
-```
-
-
 # Usage
 The SurveyMonty `Client` is a very lightweight wrapper over the
 SurveyMonkey API and only exists for minor convenience.
