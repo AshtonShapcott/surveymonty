@@ -62,3 +62,6 @@ docs/_build/
 
 # PyPI
 .pypirc
+
+# VSCode
+.vscode/

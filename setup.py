@@ -16,8 +16,8 @@ setup(
     packages=find_packages(),
     include_package_data=True,
 
-    author='Andrew Shim',
-    author_email='andrewkshim92@gmail.com',
+    author='Ashton Shapcott',
+    author_email='ashapcott@gmail.com',
     description='Python wrapper for SurveyMonkey API',
     license='MIT',
     keywords=['SurveyMonkey'],
