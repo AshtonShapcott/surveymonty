@@ -1,6 +1,6 @@
 import pkg_resources
 
-from .client import Client
+from .versions.client_v3 import ClientV3
 
 
 __version__ = pkg_resources.resource_string(
